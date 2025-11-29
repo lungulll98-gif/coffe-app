@@ -1,4 +1,4 @@
-public class TemperatureException {
+public class TemperatureException  extends Exception{
     // props
 
     int t;
@@ -6,8 +6,9 @@ public class TemperatureException {
     // constructors
 
 
-    public TemperatureException(int t) {
+    public TemperatureException(int t, String msg) {
         this.t = t;
+        super(msg);
 
     }
 
